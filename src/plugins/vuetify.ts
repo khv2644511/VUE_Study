@@ -10,6 +10,8 @@ import 'vuetify/styles'
 
 // Composables
 import { createVuetify } from 'vuetify'
+import { VBtn } from 'vuetify/components/VBtn'
+
 
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
@@ -21,6 +23,19 @@ export default createVuetify({
           secondary: '#5CBBF6',
         },
       },
+    },
+  },
+  aliases: {
+    MyButton: VBtn,
+    MyButtonAlt: VBtn,
+  },
+  defaults: {
+    VBtn: { color: 'red'},
+    MyButton: { color: 'green' },
+    MyButtonAlt: { color: 'yellow' },
+    VCard: {
+      MyButton: { color: 'secondary' },
+      VBtn: { color: 'primary' },
     },
   },
 })
