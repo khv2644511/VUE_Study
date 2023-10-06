@@ -1,12 +1,5 @@
 <template>
-      <VBtn>VBtn</VBtn>
-      <MyButton>MyButton</MyButton>
-      <MyButtonAlt>MyButtonAlt</MyButtonAlt>
-
-      <v-card>
-        <MyButton>MyButton</MyButton>
-        <VBtn>VBtn</VBtn>
-      </v-card>
+  <div></div>
 </template>
 
 <script lang="ts" setup>

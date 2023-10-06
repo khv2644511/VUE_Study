@@ -5,13 +5,11 @@
  */
 
 // Styles
-import '@mdi/font/css/materialdesignicons.css'
-import 'vuetify/styles'
+import "@mdi/font/css/materialdesignicons.css";
+import "vuetify/styles";
 
 // Composables
-import { createVuetify } from 'vuetify'
-import { VBtn } from 'vuetify/components/VBtn'
-
+import { createVuetify } from "vuetify";
 
 // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
 export default createVuetify({
@@ -19,23 +17,13 @@ export default createVuetify({
     themes: {
       light: {
         colors: {
-          primary: '#1867C0',
-          secondary: '#5CBBF6',
+          primary: "#1867C0",
+          secondary: "#5CBBF6",
         },
       },
     },
   },
   aliases: {
-    MyButton: VBtn,
-    MyButtonAlt: VBtn,
+    defaults: {},
   },
-  defaults: {
-    VBtn: { color: 'red'},
-    MyButton: { color: 'green' },
-    MyButtonAlt: { color: 'yellow' },
-    VCard: {
-      MyButton: { color: 'secondary' },
-      VBtn: { color: 'primary' },
-    },
-  },
-})
+});
