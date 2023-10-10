@@ -17,9 +17,17 @@
       "node",
       "vuetify"
     ],
+    /* Alias */
     "paths": {
-      "@/*": ["src/*"]
-    },
+      "@/*": ["src/*"],
+      "@apis/*": ["src/apis/*"],
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["src/pages/*"],
+      "@router/*": ["src/router/*"],
+      "@store/*": ["src/store/*"],
+      "@types/*": ["src/types/*"]
+    }
   },
   "include": [
     "src/**/*.ts",

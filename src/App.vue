@@ -3,5 +3,11 @@
 </template>
 
 <script lang="ts" setup>
-  //
+//
 </script>
+
+<style>
+body {
+  margin: 0px;
+}
+</style>

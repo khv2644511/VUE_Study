@@ -1,10 +1,10 @@
 <template>
-  <v-app-bar color="primary" flat>
+  <v-app-bar flat>
     <template v-slot:prepend>
       <v-app-bar-title>Hyebin Company</v-app-bar-title>
     </template>
 
-    <v-btn-group color="primary">
+    <v-btn-group>
       <v-btn>회사소개</v-btn>
       <v-btn>실시간 견적</v-btn>
       <v-btn>원가 계산기</v-btn>
@@ -38,7 +38,7 @@ let items = [{ title: "KR" }, { title: "EN" }, { title: "VIETNAM" }];
 </script>
 
 <style lang="scss">
-@use "@/styles/settings.scss";
+// @use "@/styles/settings.scss";
 
 // .my-button {
 //   height: settings.$button-height;
