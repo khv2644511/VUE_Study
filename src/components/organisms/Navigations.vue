@@ -98,6 +98,9 @@ const bottonMenu = computed(() => {
   justify-content: center;
 
   width: 100%;
+  height: calc(70vh - 40px);
+
+  gap: 14px;
 
   &__sub-menu {
     display: flex;
