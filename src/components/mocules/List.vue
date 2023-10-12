@@ -11,15 +11,21 @@
         <span class="duty"> User Experience </span>
       </div>
     </div>
-    <div class="list__item"></div>
-    <div class="list__item"></div>
+    <div class="list__item">
+      <BarChart />
+    </div>
+    <div class="list__item">
+      <BarChart />
+    </div>
     <div class="list__item">
       <div class="list__item__chip">Senior</div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BarChart from "@components/atoms/chart/BarChart.vue";
+</script>
 
 <style lang="scss" scoped>
 .list {
