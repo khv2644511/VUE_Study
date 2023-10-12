@@ -94,11 +94,10 @@ const bottonMenu = computed(() => {
 .navigation {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
 
   width: 100%;
-  height: calc(70vh - 40px);
+  height: calc(70vh - 130px);
 
   gap: 14px;
 
@@ -110,7 +109,7 @@ const bottonMenu = computed(() => {
 
     width: 100%;
 
-    gap: 40px;
+    // gap: 40px;
 
     &__title {
       margin-bottom: 12px;

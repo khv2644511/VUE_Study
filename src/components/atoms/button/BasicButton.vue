@@ -31,9 +31,9 @@ const { data } = toRefs(props);
   justify-content: flex-start;
 
   width: calc(100% - 24px);
-  height: 50px;
+  height: 38px;
 
-  padding-left: 24px;
+  padding-left: 4px;
   gap: 16px;
 
   cursor: pointer;
@@ -46,7 +46,7 @@ const { data } = toRefs(props);
   &__label {
     padding-top: 4px;
 
-    font-size: 18px;
+    font-size: 14px;
     font-family: "MBC1961GulimM";
 
     color: $color-white-000;

@@ -5,7 +5,9 @@
         <section class="page__container__navigation">
           <Navigations></Navigations>
         </section>
-        <section class="page__contianer__notice"></section>
+        <section class="page__container__notice">
+          <Notice />
+        </section>
       </div>
     </BasicLayout>
   </div>
@@ -14,6 +16,7 @@
 <script setup lang="ts">
 import Navigations from "@/components/organisms/Navigations.vue";
 import BasicLayout from "@components/atoms/layout/BasicLayout.vue";
+import Notice from "@/components/organisms/Notice.vue";
 </script>
 
 <style lang="scss" scoped>
@@ -30,9 +33,9 @@ import BasicLayout from "@components/atoms/layout/BasicLayout.vue";
   &__container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 
-    width: 60vw;
+    width: 86vw;
     height: 61vh;
 
     &__navigation {
