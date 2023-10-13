@@ -15,7 +15,7 @@
     "lib": ["esnext", "dom"],
     "types": [
       "node",
-      "vuetify"
+      "vuetify",
     ],
     /* Alias */
     "paths": {
@@ -35,5 +35,10 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "vite.config.ts"
-  ]
+  ],
+  // "moduleContext": 
+  // "./node_modules/pdfmake/build/vfs_fonts.js': 'window",
+
+  // "exclude": [ "/node_modules/", "/pdfmake.js$/" ]
+
 }
