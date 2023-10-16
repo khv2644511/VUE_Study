@@ -50,6 +50,9 @@ export default defineConfig({
       "@pages": fileURLToPath(new URL("./src/pages", import.meta.url)),
       "@router": fileURLToPath(new URL("./src/router", import.meta.url)),
       "@store": fileURLToPath(new URL("./src/store", import.meta.url)),
+      "@composable": fileURLToPath(
+        new URL("./src/composable", import.meta.url)
+      ),
     },
     extensions: [".js", ".json", ".jsx", ".mjs", ".ts", ".tsx", ".vue"],
   },

@@ -26,7 +26,9 @@
       "@pages/*": ["src/pages/*"],
       "@router/*": ["src/router/*"],
       "@store/*": ["src/store/*"],
-      "@types/*": ["src/types/*"]
+      "@types/*": ["src/types/*"],
+      "@composable/*": ["src/composable/*"]
+
     }
   },
   "include": [
