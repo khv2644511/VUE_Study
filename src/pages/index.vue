@@ -1,4 +1,8 @@
 <template>
+  <div>
+    <div>name : {{ name }}</div>
+    <div>doubleCount : {{ doubleCount }}</div>
+  </div>
   <div class="page">
     <v-btn @click="openPDF">OPEN PDF</v-btn>
     <BasicLayout>
@@ -21,6 +25,13 @@ import Notice from "@/components/organisms/Notice.vue";
 
 import pdfMake from "pdfmake/build/pdfmake";
 import pdfFonts from "pdfmake/build/vfs_fonts";
+
+import { useCounterStore } from "@/store/counter";
+import { storeToRefs } from "pinia";
+import { computed } from "vue";
+
+const store = useCounterStore();
+const { name, doubleCount } = storeToRefs(store);
 
 (<any>pdfMake).vfs = pdfFonts.pdfMake.vfs;
 (<any>pdfMake).fonts = {
