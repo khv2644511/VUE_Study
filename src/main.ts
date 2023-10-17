@@ -13,8 +13,9 @@ import { createApp } from "vue";
 // Plugins
 import { registerPlugins } from "@/plugins";
 import router from "./router";
+import pinia from "./store";
 
-const app = createApp(App).use(router);
+const app = createApp(App).use(router).use(pinia);
 
 registerPlugins(app);
 

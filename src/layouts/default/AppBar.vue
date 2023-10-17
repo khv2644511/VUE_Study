@@ -8,7 +8,7 @@
 
     <v-btn-group>
       <v-btn exact to="/mouse">mouseEvent</v-btn>
-      <v-btn>실시간 견적</v-btn>
+      <v-btn exact to="/pinia">try pinia</v-btn>
       <v-btn>원가 계산기</v-btn>
       <v-btn>이벤트</v-btn>
       <v-btn>마이페이지</v-btn>

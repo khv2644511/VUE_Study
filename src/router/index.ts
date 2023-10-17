@@ -16,6 +16,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () =>
       import(/* webpackChunkName: "Mouse" */ "@/pages/mouse.vue"),
   },
+  {
+    path: "/pinia",
+    name: "Pinia",
+    component: () =>
+      import(/* webpackChunkName: "Pinia" */ "@/pages/Pinia.vue"),
+  },
 ];
 
 const router = createRouter({
