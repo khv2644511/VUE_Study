@@ -5,6 +5,7 @@
     <div>name : {{ name }}</div>
     <div>doubleCount : {{ doubleCount }}</div>
     <div>store : store{{ store }}</div>
+    <v-btn @click="store.$reset()">reset state</v-btn>
   </div>
 </template>
 
