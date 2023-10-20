@@ -9,9 +9,10 @@
     "moduleResolution": "node",
     "strict": true,
     "jsx": "preserve",
-    "sourceMap": false,
+    "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "noImplicitThis": true,      
     "lib": ["esnext", "dom"],
     "types": [
       "node",
