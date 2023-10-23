@@ -38,18 +38,39 @@ const store = useCounterStore();
 // increment 액션은 그냥 구조화 가능.
 // const { increment } = store;
 
+// state를 그냥 추가시킬 수도 있고 patch를 사용할 수도 있음
+store.arr.push({ name: "ss", quantity: 11 });
+const patch = () => {
+  store.$patch({
+    count: store.count + 10,
+    age: 120,
+    name: "DIO",
+  });
+};
 // const patch = () => {
-//   store.$patch({
-//     count: store.count + 10,
-//     age: 120,
-//     name: "DIO",
+//   store.$patch(() => {
+//     store.arr.push({ name: "shoes", quantity: 1 });
+//     store.bool = true;
 //   });
 // };
-const patch = () =>
-  store.$patch(() => {
-    store.arr.push({ name: "shoes", quantity: 1 });
-    store.bool = true;
-  });
 
-// store.$patch({ name: "suzi", quantity: 44 });
+// store.$subscribe((mutation, state) => {
+//   console.log("변경됨", state);
+//   console.log("mutation type", mutation.type); // direct | patch object | patxh function
+//   console.log("mutation storeId", mutation.storeId);
+//   console.log("mutation payload", mutation.payload);
+// });
+
+store.$subscribe((mutation, state) => {
+  // import { MutationType } from 'pinia'
+  mutation.type; // 'direct' | 'patch object' | 'patch function'
+  // `cartStore.$id`와 동일.
+  mutation.storeId; // 'cart'
+  // `mutation.type === 'patch object'`에서만 사용 가능.
+  mutation.payload; // cartStore.$patch()에 전달된 패치 객체
+  console.log("mutation payload", mutation.payload);
+
+  // 변경될 때마다 전체 상태를 로컬 스토리지에 유지
+  localStorage.setItem("store", JSON.stringify(state));
+});
 </script>
